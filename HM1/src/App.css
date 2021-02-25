@@ -1,0 +1,184 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* --------------------------------------------- */
+/* ------------- Header ------------------------ */
+/* --------------------------------------------- */
+.wrapper {
+  position: relative;
+}
+
+.header {
+  padding: 5px;
+  width: 100%;
+  height: 50px;
+  background: blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.header .headerInput {
+  width: 80%;
+  height: 30px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.header .headerInput p {
+  height: 30px;
+  width: 150px;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.header input {
+  width: 100%;
+  height: 30px;
+}
+
+.headerSelect span {
+  color: white;
+}
+
+/* --------------------------------------------- */
+/* --------------- Main ------------------------ */
+/* --------------------------------------------- */
+
+.cardContainer {
+  width: 100%;
+  min-height: calc(100vh - 50px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.userCard {
+  margin: 5px;
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.userCard img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* --------------------------------------------- */
+/* -------------- Modal ------------------------ */
+/* --------------------------------------------- */
+
+.modalContainer {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.modalBox {
+  padding: 5px 0;
+  width: 800px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  background: #606e8c;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.modalInfo {
+  height: 60%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+.modalInfo img {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.dataContainer {
+  padding: 0 5px;
+  width: 50%;
+  box-sizing: border-box;
+}
+.modalAbout {
+  padding: 0 5px;
+  height: 20%;
+  border-top: 1px solid black;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.modalAdres {
+  padding: 0 5px;
+  height: 10%;
+  border-top: 1px solid black;
+  box-sizing: border-box;
+}
+.modalContact {
+  padding: 0 5px;
+  height: 10%;
+  box-sizing: border-box;
+  border-top: 1px solid black;
+  border-radius: 0 0 10px 10px;
+}
+
+.modalContact .contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
