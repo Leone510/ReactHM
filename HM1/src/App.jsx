@@ -110,18 +110,43 @@ const UserCard = (props) => {
 //----------------------------------------------------------
 
 const App = () => {
-  const [filteredByName, setFilteredByName] = useState(userData);
+  const [usersArrForRender, setUsersArrForRender] = useState(userData)
   const [isShowModal, setIsShowModal] = useState(false);
-  const [userForModal, setUserForModal] = useState(null)
+  const [userForModal, setUserForModal] = useState(null);
+  const [sortingType, setSortingType] = useState('def')
+  const [filteredByName, setFilteredByName] = useState('')
 
-  const handleFilterByName = (e) => {
-    console.log(e.target.value);
+  let filterValue = '';
+  let sortValue = '';
+
+  const prepereForRender = (fValue, sValue) => {
     const filtered = userData.filter(user => {
       const nameTLC = user.name.toLowerCase();
-      return nameTLC.includes(e.target.value.toLowerCase());
+      return nameTLC.includes(fValue.toLowerCase());
     })
 
-    setFilteredByName(filtered);
+    let sorted = [];
+    if (sValue === 'asc') {
+      sorted = filtered.sort((a, b) => a.age - b.age)
+    } else if (sValue === 'des') {
+      sorted = filtered.sort((a, b) => b.age - a.age)
+    } else {
+      sorted = [...filtered];
+    }
+
+    setUsersArrForRender([...sorted])
+  }
+
+  const handleFilterByName = (e) => {
+    const value = e.target.value;
+    filterValue = e.target.value;
+    prepereForRender(value, sortValue);
+  }
+
+  const handleSortType = (e) => {
+    const value = e.target.value;
+    sortValue = e.target.value;
+    prepereForRender(filterValue, value);
   }
 
   const showModal = () => {
@@ -157,7 +182,7 @@ const App = () => {
           <select 
             name="sortByAge" 
             id="#"
-            onChange={handleFilterByName}
+            onChange={handleSortType}
           >
             <option value="def">default</option>
             <option value="asc">Ascend</option>
@@ -166,7 +191,7 @@ const App = () => {
         </label>
       </HeaderApp>
       <MainApp 
-        data={filteredByName} 
+        data={usersArrForRender} 
         showModal={showModal} 
         catchModalsUser={catchModalsUser}
       />
