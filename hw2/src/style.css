@@ -1,0 +1,71 @@
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 10px;
+  width: 300px;
+  height: 500px;
+  box-sizing: border-box;
+  background: #f5f5dc;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+/* ------------ Timer styles ----------------------- */
+.timerBox {
+  height: 70px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+/* ------------ Buttons styles ---------------------- */
+
+.buttonsBox {
+  height: 70px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button {
+  width: 80px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.btnGreen {
+  background: green;
+}
+
+.btnRed {
+  background: red;
+}
+
+.btnOrange {
+  background: orange;
+}
+
+/* ------------ Time list styles --------------------- */
+
+.timeListBox {
+  padding: 10px;
+  height: calc(100% - 140px);
+  width: 100%;
+  background: Yellow;
+  box-sizing: border-box;
+}
