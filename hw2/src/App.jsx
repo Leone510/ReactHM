@@ -121,9 +121,13 @@ const App = () => {
   }
 
   const parserTimer = (num) => {
-    const sec = num%60;
-    const min = num/60%60;
-    const hour =num/60/60%60;
+    let sec = num%60;
+    let min = ~~(num/60)%60;
+    let hour = ~~(~~(num/60)/60)%60;
+
+    sec < 10 && (sec = '0'+ sec)
+    min < 10 && (min = '0'+ min)
+    hour < 10 && (hour = '0'+ hour)
 
     return `${hour}:${min}:${sec}`;
   }
@@ -153,14 +157,19 @@ const App = () => {
   }
 
   const Button = (props) => {
+    const toDo = () => {
+      setTimerStatus(props.title);
+    }
+
     return (
-      <div 
+      <button 
         className={"button" + ` ${props.color}`}
+        onClick={toDo}
       >
         <p className="btnTitle">
           {props.children}
         </p>
-      </div>
+      </button>
     )
   }
 
@@ -176,6 +185,7 @@ const App = () => {
           {btnsArr.map(btn => {
             return (
               <Button 
+                title={btn.title}
                 color={btn.color} 
                 key={`btn_${btn.color}`}
               >
