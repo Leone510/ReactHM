@@ -116,9 +116,6 @@ const App = () => {
   const [sortingType, setSortingType] = useState('def')
   const [filteredByName, setFilteredByName] = useState('')
 
-  let filterValue = '';
-  let sortValue = '';
-
   const prepereForRender = (fValue, sValue) => {
     const filtered = userData.filter(user => {
       const nameTLC = user.name.toLowerCase();
@@ -138,15 +135,13 @@ const App = () => {
   }
 
   const handleFilterByName = (e) => {
-    const value = e.target.value;
-    filterValue = e.target.value;
-    prepereForRender(value, sortValue);
+    setFilteredByName(e.target.value);
+    prepereForRender(e.target.value, sortingType);
   }
 
   const handleSortType = (e) => {
-    const value = e.target.value;
-    sortValue = e.target.value;
-    prepereForRender(filterValue, value);
+    setSortingType(e.target.value);
+    prepereForRender(filteredByName, e.target.value);
   }
 
   const showModal = () => {
