@@ -49,6 +49,10 @@ main {
   cursor: pointer;
 }
 
+.btnPurple {
+  background: purple;
+}
+
 .btnGreen {
   background: green;
 }
@@ -61,12 +65,36 @@ main {
   background: orange;
 }
 
+.clearBox {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clearBtn {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: Yellow;
+  border: 1px solid black;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 /* ------------ Time list styles --------------------- */
 
 .timeListBox {
   padding: 10px;
-  height: calc(100% - 140px);
+  height: calc(100% - 210px);
   width: 100%;
-  background: Yellow;
+  border: 1px solid black;
+  border-radius: 5px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
