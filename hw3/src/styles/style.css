@@ -17,7 +17,7 @@ main {
 .step {
   padding: 5px 50px 0;
   width: 400px;
-  height: 500px;
+  height: 520px;
   border: 2px solid black;
   border-radius: 10px;
   box-sizing: border-box;
@@ -53,10 +53,58 @@ main {
 .inputWrapper label {
   width: 100%;
 }
-.step_form input {
+input {
+  margin: 10px 0;
   width: 100%;
   height: 40px;
   box-sizing: border-box;
+}
+
+.avatars_container {
+  width: 100%;
+  height: calc(100% - 200px);
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.choosen {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.password_container {
+  width: 100%;
+  height: calc(100% - 200px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.inputWrapper {
+  margin: 20px 0;
+}
+.userInfo h3 {
+  margin: 20px 0;
+}
+
+.dataUser {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.dataUser p {
+  margin: 5px 0;
 }
 
 .step_bot {

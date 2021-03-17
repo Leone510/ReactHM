@@ -1,0 +1,4 @@
+export const actionTypes = {
+   SHOW_WINNER: 'SHOW_WINNER',
+   SHOW_PARTICIPANTS: 'SHOW_PARTICIPANTS'
+}

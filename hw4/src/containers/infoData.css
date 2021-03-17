@@ -1,0 +1,7 @@
+.modalInfo, .winModal {
+   margin: 5px 10px;
+   width: 95%;
+   height: 25%;
+   box-sizing: border-box;
+   border: 2px solid rgb(252, 58, 219)
+}

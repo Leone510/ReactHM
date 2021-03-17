@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useReducer, useContext} from 'react';
+import React, {useReducer} from 'react';
 import './styles/normalize.css';
 import './App.css';
 import './styles/style.css';
