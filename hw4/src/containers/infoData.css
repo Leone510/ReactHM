@@ -1,7 +1,50 @@
-.modalInfo, .winModal {
-   margin: 5px 10px;
-   width: 95%;
-   height: 25%;
-   box-sizing: border-box;
-   border: 2px solid rgb(252, 58, 219)
+.participantsInfo {
+  margin: 5px 10px;
+  width: 95%;
+  height: 25%;
+  box-sizing: border-box;
+  border: 2px solid rgb(252, 58, 219);
+  display: flex;
+  flex-direction: column;
+}
+
+.modalInfo,
+.modalButtons {
+  height: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.winModal {
+  margin: 5px 10px;
+  padding: 10px;
+  width: 95%;
+  height: 25%;
+  box-sizing: border-box;
+  border: 2px solid rgb(252, 58, 219);
+}
+
+.winBtn {
+  width: 70%;
+}
+
+.winTitle {
+  width: 100%;
+  height: 15%;
+}
+
+.winnerInfo {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.participantsBtn {
+  width: 70%;
+  height: 25%;
 }

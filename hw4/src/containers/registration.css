@@ -1,47 +1,120 @@
+h1 {
+  font-size: 2em;
+}
+
 .regWrapper {
-   margin: 5px 10px;
-   width: 95%;
-   height: 70%;
-   box-sizing: border-box;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;   
-   border: 2px solid rgb(39, 223, 255);
+  margin: 5px 10px;
+  width: 95%;
+  height: 70%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid rgb(39, 223, 255);
 }
 
 .regTitle {
-   width: 100%;
-   height: 15%;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   font-size: 25px;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
 }
 
 .regForm {
-   padding: 5px;
-   width: 100%;
-   height: 85%;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   align-items: center;
-   box-sizing: border-box;
+  padding: 5px;
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 label {
-   width: 100%;
+  width: 100%;
 }
 
 .regForm h2 {
-   text-align: start;
-
+  text-align: start;
 }
 
-.timer {
-   margin: 5px 10px;
-   width: 95%;
-   height: 70%;
-   box-sizing: border-box;
-   border: 2px solid rgb(39, 223, 255);
+.timerContainer {
+  margin: 5px 10px;
+  padding: 5px;
+  width: 95%;
+  height: 70%;
+  box-sizing: border-box;
+  border: 2px solid rgb(39, 223, 255);
+}
+
+.timerInfo {
+  padding: 10px;
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.timerInfo h1 {
+  margin: 30px 0;
+}
+
+.timerInfo p {
+  text-align: start;
+  line-height: 30px;
+}
+
+.participantInfo {
+  align-self: flex-start;
+}
+
+.timerBox {
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+}
+
+.timerWrapper {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.buttonsWrapper {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timerBtn {
+  margin: 5px;
+  width: 80px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 700;
+  color: white;
+}
+
+.timerFooter {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.timerFooterBtn {
+  width: 120px;
+  font-weight: 700;
+  font-size: 22px;
 }

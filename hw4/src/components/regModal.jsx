@@ -2,7 +2,8 @@ import React from 'react';
 import Button from '../components/button.jsx';
 import Input from '../components/input.jsx';
 import {useDispatch} from 'react-redux';
-import { particiantActions } from '../store/particiant/actionType.js';
+import { participantActions } from '../store/participant/actionType';
+import { generateId } from '../generateId/generateId.js';
 
 const RegModal = () => {
    const dispatch = useDispatch();
@@ -12,17 +13,18 @@ const RegModal = () => {
      
       const form = e.currentTarget;
       const currentUser = {
+         id: generateId(),
          name: form['fName'].value,
          surname: form['sName'].value,
       }
       
-      dispatch(particiantActions.currentUser(currentUser));
+      dispatch(participantActions.currentUser(currentUser));
    }
 
    return (
       <div className="regWrapper">
          <div className="regTitle">
-            <h1>Registration user</h1>
+            <h2>Registration user</h2>
          </div>
 
          <form 

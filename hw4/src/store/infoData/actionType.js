@@ -1,4 +1,7 @@
 export const actionTypes = {
-   SHOW_WINNER: 'SHOW_WINNER',
-   SHOW_PARTICIPANTS: 'SHOW_PARTICIPANTS'
+   SET_IS_SHOW: 'SET_IS_SHOW',
+}
+
+export const winerActions = {
+   setShowWiner: (payload) => ({type: actionTypes.SET_IS_SHOW, payload}),
 }

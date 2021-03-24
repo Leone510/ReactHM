@@ -21,6 +21,13 @@ const {type, payload} = action;
             showWinner: false,
             winnerID: '',
          };
+
+      case actionTypes.SET_IS_SHOW:
+         return {
+            ...state,
+            showWinner: payload,
+         }
+
       default:
          return {...state};
 

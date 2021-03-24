@@ -1,12 +1,12 @@
 import {createStore, combineReducers} from 'redux';
 import { infoDataReducer } from './infoData/reducer';
-import { particiantReducer } from './particiant/reducer';
+import { participantReducer } from './participant/reducer';
 import { usersReducer } from './users/reducer';
 
 const rootReducer = combineReducers({
    infoData: infoDataReducer,
    usersData: usersReducer,
-   participant : particiantReducer,
+   participant : participantReducer,
 });
 
 const store = createStore(rootReducer);

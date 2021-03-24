@@ -7,6 +7,7 @@ const Input = (props) => {
          name={props.name || ''} 
          type={props.type || 'text'}
          placeholder={props.children}
+         onInput={props.onInp}
       />
    )
 }
