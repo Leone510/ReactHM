@@ -1,0 +1,29 @@
+.button {
+  height: 40px;
+  border: 2px solid rgb(255, 48, 193);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  border: 2px solid blue;
+}
+
+.green {
+  background: green;
+}
+
+.red {
+  background: red;
+}
+
+.orange {
+  background: orange;
+}
+
+.gray {
+  background: gray;
+}

@@ -1,0 +1,33 @@
+.contestCard {
+  margin: 5px;
+  padding: 5px;
+  width: 250px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.contestCard_info {
+  padding: 40px 0 0 20px;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.cardBottom {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contestCardBtn {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
